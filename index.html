@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NetVelocity - The ultimate network speed test and diagnostic tool for Android.">
+    <title>NetVelocity | Network Speed Test & Diagnostics</title>
+    <style>
+        /* Base Styles */
+        :root {
+            --primary-color: #0d6efd;
+            --dark-bg: #121212;
+            --text-light: #f8f9fa;
+            --text-muted: #adb5bd;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        header {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #333;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            color: var(--text-light);
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 0;
+            gap: 40px;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+
+        .btn-download {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn-download:hover {
+            background-color: #0b5ed7;
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 60px 0;
+            background-color: #1a1a1a;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background-color: #222;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .feature-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            border-top: 1px solid #333;
+            color: var(--text-muted);
+        }
+
+        .footer-links {
+            margin-top: 10px;
+        }
+
+        .footer-links a {
+            margin: 0 10px;
+            color: var(--text-muted);
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-image {
+                text-align: center;
+                margin-top: 30px;
+            }
+
+            .nav-links {
+                display: none;
+                /* Hide links on small screens for simplicity */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">NetVelocity</div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="mailto:support@yourcompany.com">Support</a>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Analyze Your Network in Seconds</h1>
+                <p>NetVelocity provides highly accurate speed tests and deep network diagnostics to help you identify
+                    and resolve connectivity issues instantly.</p>
+                <a href="#" class="btn-download">Get it on Google Play</a>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/feature-graphic.jpg" alt="NetVelocity App Interface">
+            </div>
+        </section>
+    </div>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Accurate Speed Tests</h3>
+                    <p>Measure your download, upload, and ping latency with precision using our global network of
+                        reliable testing servers.</p>
+                    <img src="assets/images/speedtest.png" alt="Accurate Speed Tests Screenshot">
+                </div>
+                <div class="feature-card">
+                    <h3>Deep Diagnostics</h3>
+                    <p>Go beyond speed. Identify routing issues, check signal strength, and monitor your connection
+                        stability in real-time.</p>
+                    <img src="assets/images/diagnostic.png" alt="Deep Diagnostics Screenshot">
+                </div>
+                <div class="feature-card">
+                    <h3>Detailed History</h3>
+                    <p>Keep track of your past test results to monitor network performance over time and compare
+                        different Wi-Fi networks.</p>
+                    <img src="assets/images/history.png" alt="Detailed History Screenshot">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <footer>
+            <p>&copy; 2026 NetVelocity. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="mailto:support@yourcompany.com">Contact Support</a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
