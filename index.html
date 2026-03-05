@@ -107,6 +107,23 @@
             font-style: italic;
         }
 
+        .btn-secondary {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            padding: 12px 25px;
+            font-size: 1rem;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s;
+            margin-top: 15px;
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(13, 110, 253, 0.1);
+        }
+
         .hero-image {
             flex: 1;
             text-align: right;
@@ -215,6 +232,8 @@
                     and resolve connectivity issues instantly.</p>
                 <a href="https://github.com/yangshao/NetVelocityWeb" class="btn-download">Get it on GitHub</a>
                 <p class="coming-soon">Google Play version coming soon!</p>
+                <a href="mailto:moqingdevs@outlook.com?subject=Joining%20NetVelocity%20Internal%20Test"
+                    class="btn-secondary">Join Internal Test</a>
             </div>
             <div class="hero-image">
                 <img src="assets/images/feature-graphic.jpg" alt="NetVelocity App Interface">
